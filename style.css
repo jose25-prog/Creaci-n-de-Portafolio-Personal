@@ -1,0 +1,202 @@
+body, h1, h2, h3, p, ul, li, form, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1e293b;
+    color: #f8f8f2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    padding: 2em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #5eead4;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #f8f8f2;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links ul li a {
+    color: #f8f8f2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a.active {
+    color: #5eead4;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #f8f8f2;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #cbd5e1;
+    margin-bottom: 1.5em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .button-primary {
+    background-color: #5eead4;
+    color: #1e293b;
+}
+
+.hero .button-secondary {
+    border: 1px solid #5eead4;
+    color: #5eead4;
+}
+
+.hero .button-primary:hover {
+    background-color: #2dd4bf;
+}
+
+.hero .button-secondary:hover {
+    background-color: #5eead4;
+    color: #1e293b;
+}
+
+.skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2em;
+    color: #f8f8f2;
+    margin-bottom: 1.5em;
+}
+
+.skills .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skills .skill-item {
+    background-color: #334155;
+    color: #f8f8f2;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    color: #cbd5e1;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5em;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background-color: #1e293b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 1em 0;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .hero .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
