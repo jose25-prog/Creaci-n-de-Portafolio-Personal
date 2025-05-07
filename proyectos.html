@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Jose Rodriguez</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🔳 Jose Rodriguez</div>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-page">
+        <h2>Mis Proyectos</h2>
+        <div class="project-grid">
+            <div class="project-item" data-project="eda-basico">
+                <div class="project-info">
+                    <h3>EDA Básico de Dataset</h3>
+                    <p>Análisis exploratorio inicial.</p>
+                    <button class="view-details">Ver Detalles</button>
+                </div>
+            </div>
+            <div class="project-item" data-project="visualizacion-simple">
+                <div class="project-info">
+                    <h3>Visualización de Tendencias</h3>
+                    <p>Gráficos para identificar patrones.</p>
+                    <button class="view-details">Ver Detalles</button>
+                </div>
+            </div>
+            <div class="project-item" data-project="prediccion-lineal">
+                <div class="project-info">
+                    <h3>Predicción Lineal Simple</h3>
+                    <p>Modelo predictivo básico.</p>
+                    <button class="view-details">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h4 id="modal-title"></h4>
+                <p id="modal-description"></p>
+                <div id="modal-details">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Jose Rodriguez. Todos los derechos reservados.</p>
+        <div class="color-switcher">
+            <label for="color-select">Tema:</label>
+            <select id="color-select">
+                <option value="">-- Seleccionar --</option>
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="pink">Rosado</option>
+                <option value="purple">Morado</option>
+                <option value="yellow">Amarillo</option>
+            </select>
+        </div>
+    </footer>
+
+    <script src="js/scrip2.js"></script>
+</body>
+</html>
