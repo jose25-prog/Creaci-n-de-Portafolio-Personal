@@ -1,0 +1,42 @@
+<section class="formulario-contacto-moderno">
+    <h2>¡Contáctanos!</h2>
+    <form id="formularioContacto">
+        <div class="campo">
+            <label for="nombreCompleto">Nombre Completo*</label>
+            <input type="text" id="nombreCompleto" placeholder="Tu nombre completo" required>
+            <span class="icono"><i class="fas fa-user"></i></span>
+        </div>
+        <div class="campo">
+            <label for="correo">Correo Electrónico*</label>
+            <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+            <span class="icono"><i class="fas fa-envelope"></i></span>
+        </div>
+        <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Tu número de teléfono (opcional)">
+            <span class="icono"><i class="fas fa-phone"></i></span>
+        </div>
+        <div class="campo select-campo">
+            <label for="servicios">Servicios Necesarios*</label>
+            <select id="servicios" required>
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="servicio1">Consulta Inicial</option>
+                <option value="servicio2">Análisis de Datos</option>
+                <option value="servicio3">Modelado Predictivo</option>
+                <option value="servicio4">Visualización de Datos</option>
+                <option value="otro">Otro</option>
+            </select>
+            <span class="icono"><i class="fas fa-caret-down"></i></span>
+        </div>
+        <div class="campo textarea-campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="icono"><i class="fas fa-comment-dots"></i></span>
+        </div>
+        <button type="submit" class="boton-enviar">
+            <span class="texto-boton">Enviar Mensaje</span>
+            <span class="icono-boton"><i class="fas fa-paper-plane"></i></span>
+        </button>
+        <div id="respuesta-formulario" class="respuesta-formulario"></div>
+    </form>
+</section>
